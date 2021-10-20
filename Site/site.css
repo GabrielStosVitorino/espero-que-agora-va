@@ -65,7 +65,8 @@ p{
 
 .banner::before,
 .sec2::before,
-.contato::before{
+.contato::before,
+.body::before{
     content: '';
     position: absolute;
     top: 0;
@@ -78,7 +79,8 @@ p{
 
 .banner::after,
 .sec2::after,
-.contato::after{
+.contato::after,
+.body::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -336,4 +338,81 @@ footer{
 .crypt a,
 .crypt a:hover{
     color: #777;
+}
+
+/* Parte Login */
+
+.body{
+    background: url(fotos/café\ 5.jpg);
+    background-size: cover;
+}
+
+.form {
+    position: relative;
+    background: rgb(255, 255, 255, 0.1);
+    padding: 45px;
+    text-align: center;
+    margin: 0 auto 100px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+    border-radius: 0 0 4.5em 4.5em;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    margin-bottom: 10px;
+    margin-top: 10%;
+    z-index: 1000;
+}
+.inputt::placeholder{
+    color: black;
+}
+.inputfc::placeholder{
+    color:black;
+}
+.login-page {
+    width: 500px;
+    padding: 4% 0 0;
+    margin: auto;
+}
+.inputt {
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f280;
+    width: 100%;
+    border: 1px solid rgba(136, 63, 15, 0.671);
+    border-radius: 20px;
+    margin-bottom:15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.btnin:hover{
+    font-weight: bold;
+}
+
+.btnin {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background-color: #4b200cde;
+    border: 1px solid rgba(128, 74, 38, 0.671);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form .btnin:hover,.form .btnin:active,.form .btnin:focus {
+    background: #4b2b13;
+}
+
+.form .textobaixol {
+    margin: 15px 0 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+.form .textobaixol a {
+    color: #c79451;
+    text-decoration: none;
 }
