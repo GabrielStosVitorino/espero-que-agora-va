@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" 
     crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ea8cfd2902.js" crossorigin="anonymous"></script>
     <link rel="icon" href="fotos/logo sem letra.ico">
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
+<body data-spy='scroll' data-target=".navbar" data-offset='50'>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
@@ -25,7 +28,7 @@
             
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                     <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -49,8 +52,8 @@
         <div class="container h100">
             <div class="contentBox h100">
                 <div>
-                    <h1>WeGrowffee</h1>
-                    <p>Dando mais valor para o cultivo garatindo qualidade e segurança para seu plantio!</p>
+                    <h1 data-aos = "fade-up" data-aos-delay = "0" data-aos-duration = "1000">WeGrowffee</h1>
+                    <p data-aos = "fade-up" data-aos-delay = "500" data-aos-duration = "1000">Dando mais valor para o cultivo garatindo qualidade e segurança para seu plantio!</p>
                 </div>
             </div>
         </div>
@@ -60,8 +63,8 @@
             <div class="row">
                 <div class="offset-sm-2 col-sm-8">
                     <div class="headertexto text-center">
-                        <h2>Quem Somos</h2>
-                        <p>
+                        <h2 data-aos = "fade-up" data-aos-delay = "0" data-aos-duration = "1000">Quem Somos</h2>
+                        <p data-aos = "fade-up" data-aos-delay = "500" data-aos-duration = "1000">
                             A WeGrowffee é uma empresa criada por alunos Bandtec em 2021, e surge a partir da demanda do setor agropecuário buscando soluções de contenção das altas perdas nas produções de safras de café, altamente prejudicadas pelas mudanças climáticas e aquecimento global. 
                             Nosso compromisso é criar um jeito inovador de cultivar café, trazendo uma forma inteligente e sustentável de plantar e segurando ao nosso cliente economia nos processos e garantindo a qualidade das safras.
                         </p>
@@ -70,41 +73,32 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="placebox">
+                    <div class="placebox" data-aos = "fade-up" data-aos-delay = "100" data-aos-duration = "1000">
                         <div class="imgbx">
                             <img src="fotos/plantação.jpg" class="img-fluid">
                         </div>
                         <div class="content">
-                            <h3>Plantação</h3>
-                            <p>
-                                Ajudamos você a ter um melhor cuidado com sua plantação.
-                            </p>
+                            <h3>Plantação<br><span style="font-size: 16px; font-weight: lighter;">Ajudamos você a ter um melhor cuidado com sua plantação.</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="placebox">
+                    <div class="placebox" data-aos = "fade-up" data-aos-delay = "500" data-aos-duration = "1000">
                         <div class="imgbx">
                             <img src="fotos/coffee 2.jpg" class="img-fluid">
                         </div>
                         <div class="content">
-                            <h3>Colheita</h3>
-                            <p>
-                                Ajudamos a ter uma colheita abundante.
-                            </p>
+                            <h3>Colheita<br><span style="font-size: 16px; font-weight: lighter;">Ajudamos a ter uma colheita abundante.</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="placebox">
+                    <div class="placebox" data-aos = "fade-up" data-aos-delay = "1000" data-aos-duration = "1000">
                         <div class="imgbx">
                             <img src="fotos/café.jpg" class="img-fluid">
                         </div>
                         <div class="content">
-                            <h3>Consumo</h3>
-                            <p>
-                                Para que você tenha o produto da melhor qualidade no mercado.
-                            </p>
+                            <h3>Consumo<br><span style="font-size: 16px; font-weight: lighter;">Para que você tenha o produto da melhor qualidade no mercado.</span></h3>
                         </div>
                     </div>
                 </div>
@@ -112,43 +106,43 @@
         </div>
     </section>
     <section class="sec2" id="nossavisao">
-        <div class="container2">
-            <div class="titulo">
-                <h1>Nosso Objetivo</h1>
-            </div>
-            <div class="contentBox2">
-                <div>
-                    <img src="fotos/1.png" alt="">
-                    <h3>Missão</h3>
-                    <p>
-                        Construir uma forma inteligente, econômica e sustentável de cultivar.
-                    </p>
+        <div class="prop">
+            <div class="container2">
+                <h2 data-aos = "fade-up" data-aos-delay = "0" data-aos-duration = "1000">Nosso Objetivo</h2>
+                <div class="mvv">
+                    <div data-aos = "fade-up" data-aos-delay = "100" data-aos-duration = "1000">
+                        <img id="plant" src="fotos/1.png" alt="">
+                        <h3 id="mis">Missão</h3>
+                        <p>
+                            Construir uma forma inteligente, econômica e sustentável de cultivar.
+                        </p>
+                    </div>
+                    <div data-aos = "fade-up" data-aos-delay = "500" data-aos-duration = "1000">
+                        <img id="mao" src="fotos/plant 4.png" alt="">
+                        <h3 id="vis">Visão</h3>
+                        <p>
+                            Garantir um futuro de avanço suportável ao meio ambiente e aos nossos clientes.
+                        </p>
+                    </div>
+                    <div data-aos = "fade-up" data-aos-delay = "1000" data-aos-duration = "1000">
+                        <img id="flor" src="fotos/floriculture.png" alt="">
+                        <h3 id="val">Valores</h3>
+                        <p>
+                            Foco no cliente, sustentabilidade, inovação, transparência.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="fotos/2.png" alt="">
-                    <h3>Visão</h3>
-                    <p>
-                        Garantir um futuro de avanço suportável ao meio ambiente e aos nossos clientes.
-                    </p>
-                </div>
-                <div>
-                    <img src="fotos/3.png" alt="">
-                    <h3>Valores</h3>
-                    <p>
-                        Foco no cliente, sustentabilidade, inovação, transparência.
-                    </p>
-                </div>
-            </div>
             </div>
         </div>
     </section>
+    <div class="space"></div>
     <section class="contato" id="faleconosco">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="headertexto text-center">
-                        <h2>Fale Conosco</h2>
-                        <p>
+                        <h2 data-aos = "fade-up" data-aos-delay = "0" data-aos-duration = "1000">Fale Conosco</h2>
+                        <p data-aos = "fade-up" data-aos-delay = "100" data-aos-duration = "1000">
                             Deixe sua mensagem abaixo!
                         </p>
                     </div>
@@ -156,7 +150,7 @@
             </div>
             <div class="row clearfix">
                 <div class="offset-sm-2 col-sm-8">
-                    <form action="">
+                    <form action="" data-aos = "fade-up" data-aos-delay = "500" data-aos-duration = "1000">
                         <div class="form-group">
                             <label for="">Nome</label>
                             <input type="text" class="form-control">
@@ -173,7 +167,7 @@
                             <label for="">Mensagem</label>
                             <textarea class="form-control textarea" name=""></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group text-center">
                             <button class="btn btnD1">Enviar</button>
                         </div>
                     </form>
@@ -186,10 +180,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="sci">
-                        <li><a href="#"><i class="fab fa-facebook"></i>
-                        <li><a href="#"><i class="fa fa-google-plus"></i>
-                        <li><a href="#"><i class="fa fa-linkedin"></i>
-                        <li><a href="#"><i class="fa fa-instagram"></i>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/ "><i class="fa fa-instagram"></i></a></li>
                     </ul>
                     <p class="crypt"><a href="#">Copyright (C) WeeGrowffee - Todos os Direitos Reservados</a></p>
                 </div>
@@ -199,6 +193,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
     <script type="text/javascript">
         $(document).scroll(function(){
             $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
