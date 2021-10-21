@@ -278,7 +278,7 @@ p{
 .contato{
     position: relative;
     padding: 100px 0;
-    background: url(fotos/mae-mu-b75BTzDab9U-unsplash.jpg);
+    background: url(fotos/café\ 8.jpg);
     background-size: cover;
     min-height: 100vh;
 }
@@ -291,7 +291,7 @@ p{
 .contato .form-control{
     background: transparent;
     border: none;
-    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.63);
     height: 50px;
     border-radius: 30px;
     color: white;
