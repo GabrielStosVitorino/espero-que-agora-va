@@ -66,8 +66,7 @@ p{
 
 .banner::before,
 .sec2::before,
-.contato::before,
-.body::before{
+.contato::before{
     content: '';
     position: absolute;
     top: 0;
@@ -80,8 +79,7 @@ p{
 
 .banner::after,
 .sec2::after,
-.contato::after,
-.body::after{
+.contato::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -343,49 +341,109 @@ footer{
 
 /* Parte Login */
 
+.body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+}
+
+.body::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#000, transparent);
+    pointer-events: none;
+}
+
 .body{
-    background: url(fotos/café\ 5.jpg);
+    background: url(fotos/café\ 6.jpg);
     background-size: cover;
 }
 
 .form {
-    position: relative;
-    background: rgb(255, 255, 255, 0.1);
-    padding: 45px;
+   width: 320px;
+   height: 320px;
+   border: 2px solid rgba(255, 255, 255, 0.425);
+   border-radius: 80px 0px 80px 0px;
+   color: rgb(255, 255, 255);
+   background-color: rgba(0, 0, 0, 0.493);
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   box-sizing: content-box;
+   padding: 68px 28px;
+   backdrop-filter: blur(3px);
+   z-index: 100000;
+}
+
+.avatar{
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    left: 120px;
+}
+
+.form h1{
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
     text-align: center;
-    margin: 0 auto 100px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    overflow: hidden;
-    border-radius: 0 0 4.5em 4.5em;
-    border-top: 1px solid rgb(255, 255, 255, 0.5);
-    border-left: 1px solid rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    margin-bottom: 10px;
-    margin-top: 10%;
-    z-index: 1000;
+    font-size: 25px;
 }
-.inputt::placeholder{
-    color: black;
+
+.login-form p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
-.inputfc::placeholder{
-    color:black;
-}
+
 .login-page {
     width: 500px;
     padding: 4% 0 0;
     margin: auto;
 }
 .inputt {
-    font-family: "Roboto", sans-serif;
-    background: #f2f2f280;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
     width: 100%;
-    border: 1px solid rgba(136, 63, 15, 0.671);
-    border-radius: 20px;
-    margin-bottom:15px;
-    font-size: 14px;
-    box-sizing: border-box;
-    padding: 15px;
+    height: 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    padding: 12px;
 }
+
+.inputt:focus,
+.inputt:hover{
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255, 1);
+    box-shadow: none;
+}
+
+.inputt[type = 'text'], .inputt[type = 'password'], .inputt[type = 'submit']{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
 .btnin:hover{
     font-weight: bold;
 }
@@ -393,19 +451,18 @@ footer{
 .btnin {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    background-color: #4b200cde;
-    border: 1px solid rgba(128, 74, 38, 0.671);
+    background-color: #ffffffa4;
     width: 100%;
     border: 0;
-    padding: 15px;
-    color: #FFFFFF;
+    padding: 7px;
+    color: #000000;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
 .form .btnin:hover,.form .btnin:active,.form .btnin:focus {
-    background: #4b2b13;
+    background: #c5c5c5;
 }
 
 .form .textobaixol {
@@ -414,6 +471,6 @@ footer{
     font-size: 12px;
 }
 .form .textobaixol a {
-    color: #c79451;
+    color: #777;
     text-decoration: none;
 }
