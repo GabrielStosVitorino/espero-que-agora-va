@@ -76,11 +76,11 @@ function entrarlogin() {
     var z = login_senha.value;
     if (usu == x && sen == z) {
         alert(`Bem Vindo ${usu}! Logado com sucesso! Você será redirecionado para sua dashboard.`);
-        window.location.href = 'bancodedados.html';
+        window.location.href = 'grafico.html';
     } else {
         if (usu_geral == x && sen_geral == z) {
             alert(`Bem Vindo ${usu_geral}! Logado com sucesso! Você será redirecionado para sua dashboard.`);
-            window.location.href = 'bancodedados.html';
+            window.location.href = 'grafico.html';
         } else {
             alert('Usuário ou Senha Incorretos!');
         }
@@ -90,11 +90,11 @@ function entrarlogin() {
 
 
 function inicial() {
-    window.location.href = 'quemsomos.html';
+    window.location.href = 'WeGrowffee.html';
 }
 
 function inicial1() {
-    window.location.href = 'quemsomos1.html';
+    window.location.href = 'WeGrowffee1.html';
 }
 
 
@@ -132,7 +132,7 @@ function enviaremail() {
             if (mensagem.value.length >= 15) {
                 if (vemail.indexOf('@') != -1 && vemail.length >= 8 && vemail.indexOf('.') != -1) {
                     alert("Sua mensagem foi enviada com sucesso! A Wegrowffee agradece o contato!");
-                    window.location.href = 'home.html';
+                    window.location.href = 'WeGrowffee.html';
                 }
             }
         }
@@ -169,7 +169,7 @@ function enviaremail1() {
             if (mensagem.value.length >= 15) {
                 if (vema.indexOf('@') != -1 && vema.length >= 8 && vema.indexOf('.') !=  -1) {
                     alert("Sua mensagem foi enviada com sucesso! A Wegrowffee agradece o contato!");
-                    window.location.href = 'home1.html';
+                    window.location.href = 'WeGrowffee1.html';
                 }
             }
         }
@@ -224,10 +224,10 @@ function lucro2() {
 };
 
 function inicio(){
-    window.location.href = 'home.html';
+    window.location.href = 'WeGrowffee.html';
 }
 
 function inicio1(){
-    window.location.href = 'home1.html';
+    window.location.href = 'WeGrowffee1.html';
 }
 

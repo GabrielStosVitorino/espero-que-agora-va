@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="WeGrowffee.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="WeGroeffee.html#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 </div>
@@ -39,14 +39,14 @@
 
     <div class="login-page" id="tela_cadastro" style="display: none;">
         <div class="form">
-            <form class="register-form" method="POST" action="">
+            <div class="register-form" method="POST" action="">
                 <input id="cadastro_usuario" class="inputt" type="text" placeholder="Usuário">
                 <input id="cadastro_senha" class="inputt" type="password" placeholder="Senha" />
                 <input id="cadastro_confirmacao_senha" class="inputt" type="password" placeholder="Confirmação da Senha" />
                 <input id="cadastro_email" class="inputt" type="text" placeholder="Email" />
                 <input class="btnin" type="submit" value="Cadastrar" onclick="cadastrar()">
                 <p class="textobaixol">Ja é registrado? <a href="#" onclick="mudarlogin()">Faça login!</a></p>
-            </form>
+            </div>
 
         </div>
 
@@ -55,14 +55,14 @@
         <div class="form">
             <img src="fotos/avatar 2.png" class="avatar" width="120"  alt="">
             <h1>Login</h1>
-            <form class="login-form" action="" method="POST">
+            <div class="login-form" action="" method="POST">
                 <p>Usuário</p>
                 <input id="login_usuario" class="inputt" type="text" placeholder="Insira seu nome de usuário" id="usuario">
                 <p>Senha</p>
                 <input id="login_senha" class="inputt" type="password" placeholder="Insira sua senha" id="senha">
                 <input class="btnin" type="submit" value="Entrar" onclick="entrarlogin()">
                 <p class="textobaixol">Não é registrado? <a href="#" onclick="mudarcadastro()">Cadastre-se!</a></p>
-            </form>
+            </div>
         </div>
     </div>
 </body>
